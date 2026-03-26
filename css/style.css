@@ -76,7 +76,7 @@ gap: 466px;
 .hero-background {
   position: absolute;
   inset: 0;
-  background: url('assests/image1.jpg') center/cover no-repeat;
+  background: url('../assests/image1.jpg') center/cover no-repeat;
   pointer-events: none;
 }
 .hero-card .badge {
@@ -371,48 +371,106 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 }  
 
 
-@media (max-width: 1024px) {
-  .hero-content {
-    grid-template-columns: 1fr;
-  }
-  .hero-right {
-    order: -1;
-    margin-bottom: 22px;
-  }
-  .cards {
-    grid-template-columns: repeat(2, minmax(180px, 1fr));
-  }
+
+.cta-panel {
+  background: #eff6ff;
+  padding: 60px 0;
 }
 
-@media (max-width: 768px) {
-  .navbar nav {
-    display: none;
-  }
-  .hero {
-    padding: 42px 0;
-  }
-  .hero-left {
-    padding: 22px;
-  }
-  .cards {
-    grid-template-columns: 1fr;
-  }
-  .features {
-    padding: 22px 0;
-  }
+.cta-panel .container {
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-@media (max-width: 480px) {
-  .logo {
-    font-size: 1.5rem;
-  }
-  .hero-left h1 {
-    font-size: 1.75rem;
-  }
-  .hero-left p {
-    font-size: 0.93rem;
-  }
-  .btn-primary {
-    padding: 11px 20px;
-  }
+.cta-panel h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 100%;
 }
+
+.cta-panel p {
+  width: 514;
+ height: 71;
+  color: #666666;
+  margin-bottom: 50px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.cta-form {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  max-width: 486px;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.cta-form input {
+  flex: 1;
+  padding: 14px 16px;
+  border: 1px solid #cbd6ed;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.cta-form button {
+  width: 153px;
+  font-size: 16px;
+  padding: 0 26px;
+  border: 1px solid #054C73;
+  border-radius: 3px;
+  background: #0f4b83;
+  color:#FFFFFF;
+  font-weight: 700;
+  cursor: pointer;
+}
+.site-footer {
+  width: 1440;
+height: 386;
+  background: #03344F;
+  color: #ffffff;
+  padding: 50px 0 24px;
+}
+
+.site-footer .footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.site-footer h2,
+.site-footer h3 {
+font-family: Montserrat;
+font-weight: 700;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 0px;
+color: #FFFFFF;
+margin-bottom: 49px;
+}
+.site-footer p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 35px;
+  max-width: 400px;
+  margin-bottom: 21px;
+}
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(175px, 1fr));
+  gap: 12px;
+  margin-top: 23px;
+  margin-bottom: 86px;
+}
+
+.instagram-grid img {
+  border-radius: 2px;
+}
+
+
