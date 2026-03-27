@@ -530,8 +530,13 @@ margin-bottom: 49px;
   border-radius: 2px;
 }
 
+@media (max-width:992px) {
+  .browse-grid {
+    grid-template-columns: none;
+}
+}
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .nav-inner {
     gap: 20px;
   }
@@ -661,4 +666,4 @@ margin-bottom: 49px;
   .hero-background {
     background-size: cover;
   }
-}
+} */
